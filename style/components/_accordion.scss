@@ -1,0 +1,36 @@
+.accordions {
+    @include flexDrt;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .accordion,
+  .accordion-header{
+    color: $white;
+    border-radius: 15px;
+    background: linear-gradient(89.73deg, rgba(109, 103, 142, 0.9) 0.18%, rgba(246, 181, 204, 0.9) 99.72%);
+  }
+  
+  .accordion-header {
+    padding: 10px;
+    font-size: 15px;
+    font-family: $ral-sembold;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    color: $white;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .accordion-content_inner {
+    padding: 10px;
+  }
+  
+  .accordion-link{
+    color: $white;
+    font-family: $rob-reg;
+    font-size: 14px;
+  }

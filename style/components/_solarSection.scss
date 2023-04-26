@@ -1,0 +1,221 @@
+.solarSec {
+  overflow: hidden;
+}
+
+.solarSystem {
+  transform: translateX(-660px);
+  transition: 1s;
+
+  @include mediaMobileFirst(430) {
+    display: none;
+  }
+
+  &-circlesWrapper {
+    width: 400px;
+    height: 400px;
+    border: 2px solid $brown;
+    border-radius: 50%;
+    @include flexCtr;
+    position: relative;
+    animation: rotate 50s linear infinite;
+
+    @include mediaMobileFirst(700) {
+      width: 300px;
+      height: 300px;
+    }
+
+    &_woda {
+      position: absolute;
+      top: 225px;
+      left: 370px;
+
+      @include mediaMobileFirst(700) {
+        width: 30px;
+        height: 30px;
+        left: 245px;
+      }
+    }
+
+    &_col {
+      position: absolute;
+      top: 180px;
+      left: -40px;
+
+      @include mediaMobileFirst(700) {
+        width: 70px;
+        height: 70px;
+        top: 120px;
+        left: -30px;
+      }
+    }
+
+    &_eco {
+      position: absolute;
+      top: 10px;
+      left: 45px;
+
+      @include mediaMobileFirst(700) {
+        width: 55px;
+        height: 55px;
+        top: -5px;
+      }
+    }
+
+    &_mega {
+      position: absolute;
+      top: 355px;
+      left: 100px;
+      transform: rotate(110deg);
+
+      @include mediaMobileFirst(700) {
+        width: 45px;
+        height: 45px;
+        top: 265px;
+      }
+    }
+  }
+
+  .firstCircle {
+    width: 300px;
+    height: 300px;
+    border: 2px solid $brown;
+    border-radius: 50%;
+    @include flexCtr;
+    position: relative;
+    animation: rotate 50s linear infinite;
+
+    @include mediaMobileFirst(700) {
+      width: 200px;
+      height: 200px;
+    }
+
+    &-rolex {
+      position: absolute;
+      top: 55px;
+      left: 250px;
+
+      @include mediaMobileFirst(700) {
+        width: 55px;
+        height: 55px;
+        left: 165px;
+      }
+    }
+
+    &-newel {
+      position: absolute;
+      top: 0px;
+      left: 20px;
+
+      @include mediaMobileFirst(700) {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  .secondCircle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid $brown;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 50s linear infinite;
+
+    @include mediaMobileFirst(700) {
+      width: 100px;
+      height: 100px;
+    }
+
+    &-ind {
+      position: absolute;
+      top: 120px;
+      left: 135px;
+
+      @include mediaMobileFirst(700) {
+        width: 50px;
+        height: 50px;
+        top: 25px;
+        left: 65px;
+      }
+    }
+
+    &-pro {
+      @include mediaMobileFirst(700) {
+        position: absolute;
+        top: -15px;
+        left: -10px;
+      }
+    }
+  }
+
+}
+
+.textSec {
+  max-width: 402px;
+  width: 100%;
+  transform: translateY(-600px);
+  transition: 1s;
+  
+  @include mediaMobileFirst(1070) {
+    max-width: 100%;
+  }
+  
+  &_img {
+    margin-bottom: 15px;
+    width: 45px;
+    height: 45px;
+    animation: transform 3s linear infinite;
+  }
+  
+  &_title {
+    font-family: $ral-sembold;
+    font-size: 35px;
+    line-height: 137.4%;
+    color: $dark;
+  }
+  
+  &_text,
+  &-hiddenText{
+    color: $gray;
+    font-size: 15px;
+    line-height: 139.69%;
+    font-family: $rob-reg;
+    margin-block: 32px 54px;
+    
+    @include mediaMobileFirst(890) {
+      margin-block: 10px 10px;
+    }
+  }
+
+  &-hiddenText{
+    margin-block: 0px;
+    display: none;
+  }
+  &-hiddenText.open{
+    display: flex;
+  }
+
+  &_link {
+    color: $green;
+    font-size: 15px;
+    line-height: 139.69%;
+    font-family: $rob-reg;
+    margin-block: 22px 10px;
+    cursor: pointer;
+    
+    @include mediaMobileFirst(890) {
+      margin-block: 10px 10px;
+    }
+  }
+}
+
+//rotation animation
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,116 @@
+#card {
+    overflow: hidden;
+}
+
+.main-card {
+    margin-block: 60px 56px;
+    width: 100%;
+    @include flexWrpOvr;
+
+    @include mediaMobileFirst(700) {
+        margin-top: 40px;
+    }
+
+    @include mediaMobileFirst(360) {
+        margin-top: 20px;
+    }
+
+    &_first,
+    &_second,
+    &_third {
+        margin: 0 auto;
+        transform: translateX(-300px);
+        transition: 1s;
+
+        &_img,
+        .main-card_second_img,
+        .main-card_third_img {
+            background-image: url(../img/blobanimation.svg);
+            max-width: 205px;
+            width: 100%;
+            height: 200px;
+            @include flexCtr;
+            margin: 0 auto;
+
+            @include mediaMobileFirst(700) {
+                max-width: 185px;
+                height: 180px;
+            }
+        }
+
+        &_title,
+        .main-card_second_title,
+        .main-card_third_img {
+            margin-block: 10px 15px;
+            font-family: $rob-bold;
+            font-size: 18px;
+            line-height: 174.69%;
+            color: $dark;
+            text-align: center;
+
+            @include mediaMobileFirst(700) {
+                font-size: 16px;
+                line-height: 172%;
+                margin-block: 8px 13px;
+            }
+
+            @include mediaMobileFirst(360) {
+                margin-block: 0px 2px;
+            }
+        }
+
+        &_text,
+        .main-card_second_text,
+        .main-card_third_img {
+            max-width: 200px;
+            width: 100%;
+            font-family: $rob-reg;
+            color: $gray;
+            font-size: 15px;
+            line-height: 174.69%;
+            text-align: center;
+
+            @include mediaMobileFirst(700) {
+                font-size: 13px;
+                line-height: 172%;
+                max-width: 180px;
+            }
+        }
+
+    }
+
+    &_second {
+        transform: translateY(370px);
+        transition: 1s;
+
+        &_img {
+            background-image: url(../img/blobanimation.svg);
+        }
+
+        &_title {
+            margin-block: 10px 15px;
+        }
+
+        &_text {
+            max-width: 200px;
+        }
+
+    }
+
+    &_third {
+        transform: translateX(300px);
+        transition: 1s;
+
+        &_img {
+            background-image: url(../img/blobanimation.svg);
+        }
+
+        &_title {
+            margin-block: 10px 15px;
+        }
+
+        &_text {
+            max-width: 200px;
+        }
+    }
+}

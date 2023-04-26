@@ -1,0 +1,106 @@
+.info {
+  margin-top: 56px;
+  background-color: $dark-white;
+  padding: 64px 50px;
+  overflow: hidden;
+
+  @include mediaMobileFirst(1090) {
+    padding: 34px 25px;
+  }
+
+  @include mediaMobileFirst(690) {
+    padding: 14px 15px;
+  }
+
+  @include mediaMobileFirst(420) {
+    padding: 5px 5px;
+  }
+
+  &-container {
+    @include flexBtwn;
+
+    @include mediaMobileFirst(1000) {
+      @include alignDrtCtr;
+    }
+  }
+
+  &-textSection {
+    max-width: 402px;
+    width: 100%;
+    transform: translateY(650px);
+    transition: 1s;
+
+    @include mediaMobileFirst(1000) {
+      max-width: 100%;
+    }
+
+    &_img {
+      margin-bottom: 10px;
+      width: 45px;
+      height: 45px;
+      animation: transform 3s linear infinite;
+    }
+
+    &_title {
+      font-family: $ral-sembold;
+      font-size: 35px;
+      line-height: 137.4%;
+      color: $dark;
+    }
+
+    &_text {
+      color: $gray;
+      font-size: 15px;
+      line-height: 139.69%;
+      font-family: $rob-reg;
+      margin-block: 32px 10px;
+
+      @include mediaMobileFirst(530) {
+        margin-block: 10px 10px;
+      }
+    }
+
+    &_link {
+      color: $green;
+      font-size: 15px;
+      line-height: 139.69%;
+      font-family: $rob-reg;
+      margin-block: 32px 10px;
+      cursor: pointer;
+
+      @include mediaMobileFirst(530) {
+        margin-block: 10px 10px;
+      }
+    }
+  }
+
+  &-animateSec {
+    max-width: 679px;
+    width: 100%;
+
+    @include mediaMobileFirst(1150) {
+      max-width: 570px;
+    }
+
+    @include mediaMobileFirst(1000) {
+      margin-top: 20px;
+    }
+
+    &_dashboardImg {
+      width: 100%;
+      transform: translateX(880px);
+      transition: 1s;
+    }
+  }
+}
+
+//animation
+@keyframes transform {
+  0% {}
+
+  50% {
+    transform: translateX(250px);
+  }
+
+  100% {}
+}
