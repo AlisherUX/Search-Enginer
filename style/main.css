@@ -127,8 +127,8 @@
   left: 48px;
 }
 .header-blobs {
-  overflow: hidden;
   position: absolute;
+  overflow: hidden;
   top: 0;
   right: 0;
   max-width: 967px;
@@ -358,8 +358,8 @@
 }
 @media only screen and (max-width: 875px) {
   .header-menu {
-    margin-left: auto;
     position: absolute;
+    margin-left: auto;
     top: 0;
     right: 15px;
   }
@@ -568,12 +568,12 @@
   padding-block: 14px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   z-index: 1;
   transition: 0.5s;
   font-size: 15px;
   letter-spacing: 0.1em;
   box-shadow: 0px 50px 50px rgba(24, 133, 107, 0.2);
-  cursor: pointer;
 }
 @media only screen and (max-width: 920px) {
   .header-left_btn {
@@ -1131,9 +1131,9 @@
 }
 .client-clients {
   position: relative;
+  overflow: hidden;
   margin-block: 45px 66px;
   height: 557px;
-  overflow: hidden;
 }
 @media only screen and (max-width: 1250px) {
   .client-clients {
@@ -1491,8 +1491,8 @@
 }
 .wave {
   position: relative;
-  margin-bottom: 180px;
   overflow: hidden;
+  margin-bottom: 180px;
 }
 @media only screen and (max-width: 970px) {
   .wave {
@@ -1642,12 +1642,12 @@
   padding-block: 21px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   z-index: 1;
   transition: 0.5s;
   font-size: 15px;
   letter-spacing: 0.1em;
   box-shadow: 0px 50px 50px rgba(24, 133, 107, 0.2);
-  cursor: pointer;
 }
 @media only screen and (max-width: 1300px) {
   .wave-topContent_btn {
@@ -1935,9 +1935,9 @@
 .footerMenu-iconsBar_menu {
   display: flex;
   align-items: center;
-  gap: 20px;
-  cursor: pointer;
   position: relative;
+  cursor: pointer;
+  gap: 20px;
 }
 @media only screen and (max-width: 1050px) {
   .footerMenu-iconsBar_menu {
@@ -2178,8 +2178,8 @@
   flex-wrap: wrap;
   background: #fff;
   border: 2px solid #6d6d6d;
-  display: none;
   transition: 1s;
+  display: none;
 }
 @media only screen and (max-width: 420px) {
   .leftMenu {
@@ -2241,9 +2241,9 @@
 
 .header-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .forgot {
@@ -2309,6 +2309,12 @@
   flex-direction: column;
   gap: 10px;
   width: 100%;
+  display: none;
+}
+@media only screen and (max-width: 710px) {
+  .accordions {
+    display: flex;
+  }
 }
 
 .accordion,

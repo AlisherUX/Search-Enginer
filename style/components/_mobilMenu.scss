@@ -53,8 +53,8 @@
   @include flexCtrWrp;
   background: $white;
   border: 2px solid $light-dark;
-  display: none;
   transition: 1s;
+  display: none;
 
   @include mediaMobileFirst(420) {
     display: flex;

@@ -2,13 +2,18 @@
     @include flexDrt;
     gap: 10px;
     width: 100%;
+    display: none;
+
+    @include mediaMobileFirst(710) {
+      display: flex;
+    }
   }
   
   .accordion,
   .accordion-header{
     color: $white;
     border-radius: 15px;
-    background: linear-gradient(89.73deg, rgba(109, 103, 142, 0.9) 0.18%, rgba(246, 181, 204, 0.9) 99.72%);
+    background: $liner-darkPink;
   }
   
   .accordion-header {

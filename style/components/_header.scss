@@ -22,8 +22,8 @@
 
   //rotation elements, big blob wrapper
   &-blobs {
-    overflow: hidden;
     position: absolute;
+    overflow: hidden;
     top: 0;
     right: 0;
     max-width: 967px;
@@ -237,8 +237,8 @@
     }
 
     @include mediaMobileFirst(875) {
-      margin-left: auto;
       position: absolute;
+      margin-left: auto;
       top: 0;
       right: 15px;
     }
@@ -444,12 +444,12 @@
       padding-block: 14px;
       position: relative;
       overflow: hidden;
+      cursor: pointer;
       z-index: 1;
       transition: 0.5s;
       font-size: 15px;
       letter-spacing: 0.1em;
       box-shadow: $btnShadow;
-      cursor: pointer;
 
       @include mediaMobileFirst(920) {
         font-size: 11px;

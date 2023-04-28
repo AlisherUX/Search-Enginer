@@ -3,6 +3,7 @@
         align-items: center;
         justify-content: space-between;
 }
+
 @mixin flexBtwn {
         display: flex;
         justify-content: space-between;
@@ -26,7 +27,7 @@
         align-items: center;
 }
 
-@mixin alignCtr{
+@mixin alignCtr {
         display: flex;
         align-items: center;
 }
@@ -43,6 +44,14 @@
         align-items: center;
         flex-wrap: wrap;
 }
+
+@mixin flexCtrCol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+
 @mixin justCtrWrp {
         display: flex;
         justify-content: center;
@@ -58,4 +67,14 @@
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
+}
+
+@mixin MrgDsNone {
+        margin-left: auto;
+        display: none;
+}
+
+@mixin PosFixDsNone {
+        position: fixed;
+        display: none;
 }

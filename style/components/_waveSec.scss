@@ -1,7 +1,7 @@
 .wave {
   position: relative;
-  margin-bottom: 180px;
   overflow: hidden;
+  margin-bottom: 180px;
 
   @include mediaMobileFirst(970) {
     margin-bottom: 140px;
@@ -138,12 +138,12 @@
       padding-block: 21px;
       position: relative;
       overflow: hidden;
+      cursor: pointer;
       z-index: 1;
       transition: 0.5s;
       font-size: 15px;
       letter-spacing: 0.1em;
       box-shadow: $btnShadow;
-      cursor: pointer;
 
       @include mediaMobileFirst(1300) {
         max-width: 290px;

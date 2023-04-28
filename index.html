@@ -6,12 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style/main.css" />
+  <link rel="stylesheet" href="./style/loader.css">
   <link rel="stylesheet" href="./style/components/accordion.scss" />
   <title>Search Enginer</title>
 </head>
 
 <body class="body">
+
+  <!-- Loader window -->
+  <div class="background">
+    <div class="lds-circle">
+      <div></div>
+    </div>
+  </div>
+
+  <!-- header section -->
   <header class="header">
+
     <!-- mobile menu bar background opocity -->
     <div class="background-opocity"></div>
 
@@ -58,6 +69,7 @@
     <img class="header-w" src="./img/W.png" alt="" />
 
     <div class="header-container">
+
       <!-- header left banner content -->
       <div class="header-left">
         <h1 class="header-left_title">SEO Backlink be Ranked 1</h1>
@@ -119,10 +131,15 @@
     </div>
   </header>
 
+  <!-- Main section -->
   <main>
+
+    <!-- cards section -->
     <section id="card">
       <div class="card-container">
         <div class="main-card">
+
+          <!-- first card -->
           <div class="main-card_first">
             <div class="main-card_first_img">
               <img src="./img/threeEclipse.png" alt="" />
@@ -134,6 +151,7 @@
             </p>
           </div>
 
+          <!-- second card -->
           <div class="main-card_second">
             <div class="main-card_second_img">
               <img src="./img/Shop.png" alt="" />
@@ -145,6 +163,7 @@
             </p>
           </div>
 
+          <!-- third card -->
           <div class="main-card_third">
             <div class="main-card_third_img">
               <img src="./img/hands.png" alt="" />
@@ -159,6 +178,7 @@
       </div>
     </section>
 
+    <!-- info section -->
     <section id="support" class="info">
       <div class="info-container">
         <div class="info-textSection">
@@ -201,6 +221,7 @@
       </div>
     </section>
 
+    <!-- solar section -->
     <section id="pricing" class="solarSec">
       <div class="solarSec-container">
         <div class="solarSystem">
@@ -251,6 +272,7 @@
       </div>
     </section>
 
+    <!-- clients section -->
     <section id="about" class="client">
       <div class="client-container">
         <p class="client-title">Weve helped over 600 clients achieve</p>
@@ -275,6 +297,7 @@
       </div>
     </section>
 
+    <!-- wave section -->
     <section id="blog" class="wave">
       <div class="wave-topContent">
         <p class="wave-topContent_title">
@@ -421,6 +444,7 @@
     </section>
   </main>
 
+  <!-- footer section -->
   <footer>
     <div class="footer-container">
       <div class="footerMenu">
@@ -428,6 +452,8 @@
         <!-- accordion -->
         <div class="accordions">
           <div class="accordion">
+
+            <!-- first accordion -->
             <div class="accordion-header">COMPANY</div>
             <div class="accordion-content">
               <div class="accordion-content_inner">
@@ -452,6 +478,7 @@
             </div>
           </div>
 
+          <!-- second accordion -->
           <div class="accordion">
             <div class="accordion-header">CUSTOMERS</div>
             <div class="accordion-content">
@@ -474,6 +501,7 @@
             </div>
           </div>
 
+          <!-- third accordion -->
           <div class="accordion">
             <div class="accordion-header">PROVIDERS</div>
             <div class="accordion-content">
@@ -618,11 +646,13 @@
       </div>
     </div>
 
+    <!-- footer bottom content -->
     <div class="footerBottom">
       <img src="./img/Thanks.png" alt="" class="footerBottom-img" />
     </div>
   </footer>
 
+  <!-- app js -->
   <script src="./javaScript/app.js"></script>
 
   <!-- accordion java script cods -->
@@ -630,6 +660,8 @@
 
   <!-- transform animation java script cods -->
   <script src="./javaScript/transform.js"></script>
+
+  <script src="./javaScript/loader.js"></script>
 </body>
 
 </html>

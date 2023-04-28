@@ -135,9 +135,9 @@
 
     &_menu {
       @include alignCtr;
-      gap: 20px;
-      cursor: pointer;
       position: relative;
+      cursor: pointer;
+      gap: 20px;
 
       @include mediaMobileFirst(1050) {
         gap: 15px;

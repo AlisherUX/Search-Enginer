@@ -14,9 +14,9 @@
 
   &-clients {
     position: relative;
+    overflow: hidden;
     margin-block: 45px 66px;
     height: 557px;
-    overflow: hidden;
 
     @include mediaMobileFirst(1250) {
       margin-block: 40px 60px;
