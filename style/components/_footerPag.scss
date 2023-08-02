@@ -1,0 +1,295 @@
+//footer menu
+.footerMenu {
+  @include flexBtwn;
+
+  @include mediaMobileFirst(900) {
+    @include justCtrWrp;
+    gap: 20px;
+  }
+
+  .footerMenu-title {
+    color: $black;
+    font-family: $ral-sembold;
+    font-size: 18px;
+    line-height: 137.4%;
+    margin-bottom: 80px;
+    position: relative;
+
+    @include mediaMobileFirst(1050) {
+      font-size: 17px;
+      line-height: 135%;
+      margin-bottom: 70px;
+    }
+
+    @include mediaMobileFirst(970) {
+      font-size: 16px;
+      line-height: 130%;
+      margin-bottom: 60px;
+    }
+
+    @include mediaMobileFirst(884) {
+      font-size: 14px;
+      line-height: 120%;
+      margin-bottom: 20px;
+    }
+
+    @include mediaMobileFirst(710) {
+      text-align: center;
+    }
+  }
+
+  &-title::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: $green-blue;
+
+    @include mediaMobileFirst(884) {
+      top: 20px;
+    }
+
+    @include mediaMobileFirst(710) {
+      width: 100%;
+    }
+  }
+
+  .footerMenu-menu {
+    .footerMenu-menu_link {
+      color: $black;
+      font-family: $ral-med;
+      font-size: 18px;
+      line-height: 137.4%;
+      position: relative;
+
+      @include mediaMobileFirst(1050) {
+        font-size: 17px;
+        line-height: 135%;
+      }
+
+      @include mediaMobileFirst(970) {
+        font-size: 16px;
+        line-height: 130%;
+      }
+
+      @include mediaMobileFirst(460) {
+        font-size: 14px;
+        line-height: 120%;
+      }
+
+      @include mediaMobileFirst(330) {
+        font-size: 13px;
+        line-height: 110%;
+      }
+    }
+
+    &_link::after {
+      content: "";
+      background-color: $dark-green;
+      width: 0%;
+      height: 2px;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      transition: 0.5s;
+    }
+
+    &_link:hover::after {
+      width: 100%;
+    }
+  }
+
+  &-company {
+    @include mediaMobileFirst(970) {
+      margin-bottom: 10px;
+    }
+
+    @include mediaMobileFirst(710) {
+      display: none;
+    }
+  }
+
+  &-customers {
+    @include mediaMobileFirst(710) {
+      display: none;
+    }
+  }
+
+  &-providers {
+    @include mediaMobileFirst(710) {
+      display: none;
+    }
+  }
+
+  &-iconsBar {
+    &_menu {
+      @include alignCtr;
+      position: relative;
+      cursor: pointer;
+      gap: 20px;
+
+      @include mediaMobileFirst(1050) {
+        gap: 15px;
+      }
+
+      @include mediaMobileFirst(970) {
+        gap: 10px;
+      }
+
+      @include mediaMobileFirst(460) {
+        gap: 5px;
+      }
+
+      &_img {
+        width: 40px;
+        height: 40px;
+
+        @include mediaMobileFirst(1050) {
+          width: 35px;
+          height: 35px;
+        }
+
+        @include mediaMobileFirst(970) {
+          width: 30px;
+          height: 30px;
+        }
+
+        @include mediaMobileFirst(460) {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      &_link {
+        font-family: $ral-med;
+        color: $black;
+        font-size: 18px;
+        line-height: 137.4%;
+
+        @include mediaMobileFirst(1050) {
+          font-size: 17px;
+          line-height: 135%;
+        }
+
+        @include mediaMobileFirst(970) {
+          font-size: 16px;
+          line-height: 130%;
+        }
+
+        @include mediaMobileFirst(460) {
+          font-size: 14px;
+          line-height: 120%;
+        }
+
+        @include mediaMobileFirst(330) {
+          font-size: 13px;
+          line-height: 110%;
+        }
+      }
+    }
+  }
+
+  &-recentBlog {
+    &_menu {
+      margin-bottom: 15px;
+      
+      &_link {
+        max-width: 350px;
+        font-family: $ral-med;
+        color: $black;
+        font-size: 18px;
+        line-height: 137.4%;
+        opacity: 0.5;
+
+        @include mediaMobileFirst(1050) {
+          font-size: 17px;
+          line-height: 135%;
+          margin-bottom: 10px;
+          max-width: 340px;
+        }
+
+        @include mediaMobileFirst(970) {
+          font-size: 16px;
+          line-height: 130%;
+          margin-bottom: 5px;
+          max-width: 330px;
+        }
+
+        @include mediaMobileFirst(460) {
+          font-size: 14px;
+          line-height: 120%;
+          max-width: 320px;
+        }
+
+        @include mediaMobileFirst(330) {
+          font-size: 13px;
+          line-height: 110%;
+          max-width: 310px;
+        }
+      }
+    }
+  }
+}
+
+.footerBottom {
+  margin-top: 115px;
+  width: 100%;
+  padding-block: 56px;
+  @include flexCtr;
+  background-color: $dark-white;
+
+  @include mediaMobileFirst(1050) {
+    padding: 50px;
+    margin-top: 100px;
+  }
+
+  @include mediaMobileFirst(970) {
+    padding: 40px;
+    margin-top: 90px;
+  }
+
+  @include mediaMobileFirst(700) {
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  &-img {
+    max-width: 300px;
+
+    @include mediaMobileFirst(460) {
+      max-width: 250px;
+    }
+  }
+}
+
+.icons-menu_wrapper {
+  max-width: 150px;
+  @include flexWrpStrt;
+  gap: 10px;
+
+  @include mediaMobileFirst(884) {
+    justify-content: center;
+    max-width: 100%;
+    gap: 20px;
+  }
+}
+
+.menu-wrapper {
+  @include flexDrt;
+  gap: 20px;
+
+  @include mediaMobileFirst(1050) {
+    gap: 15px;
+  }
+
+  @include mediaMobileFirst(970) {
+    gap: 10px;
+  }
+}
+
+.link-item {
+  color: $green-blue;
+  cursor: pointer;
+}

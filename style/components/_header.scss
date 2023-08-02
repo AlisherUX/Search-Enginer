@@ -1,0 +1,542 @@
+//HEADER
+.header {
+  position: relative;
+  overflow: hidden;
+
+  &-lineCircle,
+  &-w {
+    position: absolute;
+    top: 150px;
+    left: 304px;
+    animation: rotation 5s linear infinite;
+
+    @include mediaMobileFirst(470) {
+      display: none;
+    }
+  }
+
+  &-w {
+    top: 101px;
+    left: 48px;
+  }
+
+  //rotation elements, big blob wrapper
+  &-blobs {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    max-width: 967px;
+    width: 100%;
+    height: 835px;
+    z-index: -1;
+    animation: headerBlob 0.7s linear;
+
+    @include mediaMobileFirst(1260) {
+      max-width: 867px;
+      height: 735px;
+    }
+
+    @include mediaMobileFirst(1085) {
+      max-width: 667px;
+      height: 535px;
+    }
+
+    @include mediaMobileFirst(920) {
+      max-width: 567px;
+      height: 435px;
+    }
+
+    //Header banner right big blob
+    &_bgblob {
+      transform: rotate(195deg);
+      position: absolute;
+      top: -335px;
+      right: -260px;
+      height: 1105px;
+
+      @include mediaMobileFirst(1210) {
+        height: 1070px;
+      }
+
+      @include mediaMobileFirst(1085) {
+        height: 900px;
+      }
+
+      @include mediaMobileFirst(920) {
+        height: 800px;
+      }
+
+      @include mediaMobileFirst(800) {
+        display: none;
+      }
+    }
+
+    //laptop img
+    &_laptop {
+      position: absolute;
+      bottom: 190px;
+      right: 44px;
+      max-width: 690px;
+      width: 100%;
+
+      @include mediaMobileFirst(1260) {
+        max-width: 590px;
+      }
+
+      @include mediaMobileFirst(1085) {
+        max-width: 500px;
+        bottom: 90px;
+        right: 44px;
+      }
+
+      @include mediaMobileFirst(920) {
+        max-width: 450px;
+        bottom: 40px;
+        right: 44px;
+      }
+
+      @include mediaMobileFirst(810) {
+        right: 18px;
+      }
+
+      @include mediaMobileFirst(760) {
+        max-width: 350px;
+        bottom: 60px;
+        right: 24px;
+      }
+
+      @include mediaMobileFirst(715) {
+        display: none;
+      }
+    }
+
+    //rotation element
+    &_semicircle {
+      position: absolute;
+      top: 155px;
+      left: 415px;
+      animation: rotation 5s linear infinite;
+
+      @include mediaMobileFirst(1085) {
+        width: 33px;
+        height: 27px;
+        top: 90px;
+        left: 240px;
+      }
+    }
+
+    //rotation element
+    &_search {
+      position: absolute;
+      top: 200px;
+      right: 80px;
+      z-index: 1;
+      animation: rotation 5s linear infinite;
+
+      @include mediaMobileFirst(1260) {
+        width: 100px;
+        top: 170px;
+      }
+
+      @include mediaMobileFirst(1085) {
+        width: 80px;
+        top: 130px;
+        right: 70px;
+      }
+
+      @include mediaMobileFirst(920) {
+        width: 70px;
+        top: 140px;
+      }
+
+      @include mediaMobileFirst(715) {
+        right: 150px;
+        top: 194px;
+      }
+
+      @include mediaMobileFirst(530) {
+        display: none;
+      }
+    }
+
+    //rotation element
+    &_rectangleMenu {
+      position: absolute;
+      bottom: 270px;
+      left: 280px;
+      z-index: 2;
+      animation: rotation 5s linear infinite;
+
+      @include mediaMobileFirst(1260) {
+        width: 58px;
+        bottom: 255px;
+        left: 275px;
+      }
+
+      @include mediaMobileFirst(1085) {
+        width: 48px;
+        bottom: 140px;
+        left: 158px;
+      }
+
+      @include mediaMobileFirst(920) {
+        bottom: 110px;
+        left: 108px;
+      }
+
+      @include mediaMobileFirst(715) {
+        left: 225px;
+      }
+
+      @include mediaMobileFirst(630) {
+        display: none;
+      }
+    }
+
+    //rotation element
+    &_orangeRectangle {
+      position: absolute;
+      bottom: 310px;
+      right: 90px;
+      animation: rotation 5s linear infinite;
+
+      @include mediaMobileFirst(1260) {
+        width: 58px;
+        right: 80px;
+        bottom: 290px;
+      }
+
+      @include mediaMobileFirst(1085) {
+        width: 48px;
+        bottom: 170px;
+        right: 75px;
+      }
+
+      @include mediaMobileFirst(920) {
+        bottom: 70px;
+        right: 45px;
+      }
+
+      @include mediaMobileFirst(530) {
+        display: none;
+      }
+    }
+  }
+
+  //HEADER MENU
+  &-menu {
+    margin-top: 35px;
+    display: flex;
+    gap: 25px;
+    animation: headerMenu 1.2s linear;
+
+    @include mediaMobileFirst(1085) {
+      margin-top: 20px;
+      gap: 18px;
+    }
+
+    @include mediaMobileFirst(875) {
+      position: absolute;
+      margin-left: auto;
+      top: 0;
+      right: 15px;
+    }
+
+    &_blob {
+      position: absolute;
+      top: -250px;
+      right: -160px;
+      z-index: -1;
+      height: 750px;
+      display: none;
+    
+      @include mediaMobileFirst(800) {
+        height: 600px;
+        right: -100px;
+        display: flex;
+      }
+    
+      @include mediaMobileFirst(420) {
+        transform: translateY(-200px) translateX(100px);
+      }
+    }
+
+    // li tag
+    &_item {
+      text-decoration: none;
+      @include alignCtr;
+
+      @include mediaMobileFirst(420) {
+        display: none;
+      }
+
+      // a tag
+      &_link {
+        color: $white;
+        transition: 0.3s;
+        font-family: $ral-bold;
+        font-size: 10px;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+
+      &_link:hover {
+        font-size: 15px;
+        letter-spacing: 2.5px;
+
+        @include mediaMobileFirst(1085) {
+          font-size: 12px;
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+
+    &_line {
+      width: 2px;
+      background-color: $white;
+
+      @include mediaMobileFirst(1085) {
+        display: none;
+      }
+    }
+
+    // Header menu button
+    &_btn {
+      color: $white;
+      border: 2px solid $white;
+      border-radius: 50px;
+      padding: 12px 28px;
+      cursor: pointer;
+      transition: 0.5s;
+
+      @include mediaMobileFirst(1260) {
+        padding: 10px 22px;
+        font-family: $ral-med;
+      }
+
+      @include mediaMobileFirst(1085) {
+        padding: 8px 15px;
+        font-size: 12px;
+        border: 1.7px solid $white;
+      }
+
+      @include mediaMobileFirst(420) {
+        display: none;
+      }
+    }
+    &_btn:hover {
+      color: $dark-pink;
+      background-color: $white;
+    }
+  }
+
+  //Burger menu
+  &-bgmenu {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+    @include flexDrt;
+    gap: 5px;
+
+    .header-bgmenu > div {
+      width: 100%;
+      height: 2px;
+      border-radius: 1px;
+      background-color: $dark;
+    }
+  }
+
+  //Banner title, text, btn
+  &-left {
+    width: 50%;
+    margin-top: 15%;
+    margin-bottom: 22%;
+    animation: headerLeft 0.7s linear;
+
+
+    @include mediaMobileFirst(700) {
+      margin-top: 17%;
+      margin-bottom: 10%;
+    }
+
+    @include mediaMobileFirst(570) {
+      margin-top: 20%;
+      margin-bottom: 10%;
+    }
+
+    @include mediaMobileFirst(530) {
+      margin-top: 27%;
+      width: 100%;
+      @include alignDrtCtr;
+    }
+
+    @include mediaMobileFirst(400) {
+      margin-bottom: 20%;
+    }
+
+    //Banner title
+    &_title {
+      font-family: $ral-bold;
+      width: 100%;
+      font-size: 50px;
+      line-height: 59px;
+
+      @include mediaMobileFirst(1180) {
+        font-size: 40px;
+        line-height: 45px;
+      }
+
+      @include mediaMobileFirst(920) {
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      @include mediaMobileFirst(530) {
+        width: 355px;
+      }
+
+      @include mediaMobileFirst(470) {
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    //Banner text
+    &_text {
+      color: $gray;
+      font-family: $rob-reg;
+      font-size: 20px;
+      line-height: 35px;
+      margin-block: 25px 30px;
+      max-width: 600px;
+      width: 100%;
+
+      @include mediaMobileFirst(1180) {
+        max-width: 350px;
+        font-size: 16px;
+        line-height: 25px;
+        margin-block: 18px 25px;
+      }
+
+      @include mediaMobileFirst(920) {
+        font-size: 15px;
+        line-height: 20px;
+        margin-block: 10px 20px;
+      }
+
+      @include mediaMobileFirst(470) {
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+      }
+    }
+
+    //Green banner button
+    &_btn {
+      color: $white;
+      background-color: $white-yellow;
+      border: 3px solid $white-yellow;
+      border-radius: 50px;
+      max-width: 322px;
+      width: 100%;
+      padding-block: 14px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      z-index: 1;
+      transition: 0.5s;
+      font-size: 15px;
+      letter-spacing: 0.1em;
+      box-shadow: $btnShadow;
+
+      @include mediaMobileFirst(920) {
+        font-size: 11px;
+        max-width: 220px;
+        padding-block: 10px;
+      }
+    }
+
+    &_btn span {
+      position: absolute;
+      width: 25%;
+      height: 100%;
+      background-color: $white;
+      transform: translateY(150%);
+      border-radius: 50%;
+      left: calc((var(--n) - 1) * 25%);
+      transition: 0.5s;
+      transition-delay: calc((var(--n) - 1) * 0.1s);
+      z-index: -1;
+    }
+
+    &_btn:hover {
+      color: $white-yellow;
+    }
+
+    &_btn:hover span {
+      transform: translateY(0) scale(2);
+    }
+
+    &_btn span:nth-child(1) {
+      --n: 1;
+    }
+
+    &_btn span:nth-child(2) {
+      --n: 2;
+    }
+
+    &_btn span:nth-child(3) {
+      --n: 3;
+    }
+
+    &_btn span:nth-child(4) {
+      --n: 4;
+    }
+  }
+}
+
+//Rotate animation keyframes
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+//headerLeft transform animation
+@keyframes headerLeft {
+  from {
+    transform: translateX(-750px);
+  }
+  
+  to {
+    transform: translateX(0px);
+  }
+}
+
+//header menu transform animation
+@keyframes headerMenu {
+  from {
+    transform: translateY(-600px);
+  }
+  
+  to {
+    transform: translateY(0px);
+  }
+}
+
+//header big blob
+@keyframes headerBlob {
+  from {
+    transform: translateX(770px);
+  }
+  
+  to {
+    transform: translateX(0px);
+  }
+}

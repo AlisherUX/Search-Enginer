@@ -1,0 +1,80 @@
+@mixin alignBtwn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flexBtwn {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexWrpStrt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+@mixin flexDrtBtwn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin alignDrtCtr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin alignCtr {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexCtr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCtrWrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin flexCtrCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin justCtrWrp {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin flexDrt {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexWrpOvr {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+@mixin MrgDsNone {
+  margin-left: auto;
+  display: none;
+}
+
+@mixin PosFixDsNone {
+  position: fixed;
+  display: none;
+}

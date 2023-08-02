@@ -1,0 +1,21 @@
+// VARIBLES
+
+@import"./varribles/normalize";
+@import"./varribles/mixins";
+@import"./varribles/fonts";
+@import"./varribles/media-mixins";
+@import"./varribles/variable";
+@import "./varribles/setting";
+
+// COMPONENTS
+@import"./components/header";
+@import"./components/main-card";
+@import"./components/info";
+@import"./components/solarSection";
+@import"./components/clientSec";
+@import"./components/waveSec";
+@import"./components/footerPag";
+@import"./components/mobilMenu";
+@import"./components/registration";
+@import"./components/accordion";
+@import"./components/loader.scss";

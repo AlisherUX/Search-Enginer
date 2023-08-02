@@ -1,0 +1,107 @@
+.body {
+  overflow-y: scroll;
+}
+
+.header-mobilMenu_button {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 20px;
+  width: 25px;
+  @include alignDrtCtr;
+  gap: 5px;
+  display: none;
+
+  @include mediaMobileFirst(420) {
+    display: flex;
+  }
+}
+
+.header-mobilMenu_button > div {
+  width: 100%;
+  background-color: $white;
+  height: 3px;
+  border-radius: 2px;
+}
+
+//mobil menu bar
+.background-opocity {
+  background-color: $dark-pink;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.leftMenu {
+  transform: translateX(-270px);
+  position: fixed;
+  z-index: 3;
+  width: 270px;
+  height: 100vh;
+  @include flexCtrWrp;
+  background: $white;
+  border: 2px solid $light-dark;
+  transition: 1s;
+  display: none;
+
+  @include mediaMobileFirst(420) {
+    display: flex;
+  }
+}
+
+.leftMenu.open {
+  transform: translateX(0px);
+}
+
+//left menu items for example: exit button, logo, sign up button and others.
+.leftMenu-exitBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.leftMenu-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 18px;
+}
+
+.leftMenu-menu {
+  @include flexDrt;
+  align-items: center;
+  margin-left: 15px;
+  gap: 15px;
+
+  &_item {
+    &_link {
+      font-size: 15px;
+      font-family: $ral-bold;
+      color: $dark;
+    }
+  }
+}
+
+.leftMenu_btn {
+  @include flexCtr;
+  margin-top: 25px;
+  width: 90px;
+  color: $white;
+  font-family: $ral-med;
+  font-size: 15px;
+  border-radius: 1px solid $dark-pink;
+  background-color: $dark-pink;
+  padding-block: 10px;
+  border-radius: 20px;
+}
+
+.leftMenu_btn:active {
+  background-color: $white;
+}

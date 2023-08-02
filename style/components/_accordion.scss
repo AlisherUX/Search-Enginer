@@ -1,0 +1,38 @@
+.accordions {
+    @include flexDrt;
+    gap: 10px;
+    width: 100%;
+    display: none;
+
+    @include mediaMobileFirst(710) {
+      display: flex;
+    }
+  }
+  
+  .accordion,
+  .accordion-header{
+    color: $white;
+    border-radius: 10px;
+    background: $liner-darkPink;
+  }
+  
+  .accordion-header {
+    padding: 10px;
+    font-size: 15px;
+    font-family: $ral-sembold;
+    cursor: pointer;
+  }
+  
+  .accordion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .accordion-link{
+    color: $white;
+    font-family: $rob-reg;
+    font-size: 14px;
+  }

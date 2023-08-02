@@ -1,0 +1,5 @@
+@mixin mediaMobileFirst($width) {
+  @media only screen and (max-width: #{$width + px}) {
+    @content;
+  }
+}
